@@ -1,0 +1,7 @@
+{
+  "name": "qrTania",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
