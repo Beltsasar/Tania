@@ -1,0 +1,76 @@
+ion-header {
+    --background: #3880ff; /* Color de fondo de la barra */
+    --color: white; /* Color del texto en la barra */
+    --box-shadow: none; /* Eliminar sombra */
+  }
+  
+  ion-toolbar {
+    --background: #3880ff; /* Color del toolbar */
+  }
+  
+  ion-title {
+    font-size: 1.5rem; /* Tamaño de la fuente del título */
+    font-weight: bold;
+    color: white; /* Color blanco para el título */
+  }
+  
+  ion-buttons {
+    padding-left: 10px;
+  }
+  
+  ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0; /* Elimina el padding predeterminado */
+    background: #f4f5f8; /* Fondo gris claro */
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  ion-button {
+    margin: 10px 0;
+    --background: #3880ff;
+    --color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  ion-button[expand="full"] {
+    width: 80%;
+    max-width: 350px;
+  }
+  
+  ion-button:hover {
+    background: #4c8cff; /* Efecto hover con color más claro */
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  ion-back-button {
+    color: white; /* Color de la flecha de retroceso */
+  }
+  

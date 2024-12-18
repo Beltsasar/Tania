@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Acceso Profesores(as)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <img src="assets/img/user-teacher.png">
+  <form (ngSubmit)="login()">
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input 
+        type="text" 
+        [(ngModel)]="user.correo" 
+        name="username"
+        required
+        autocomplete="username">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input 
+        type="password" 
+        [(ngModel)]="user.contrasena" 
+        name="password"
+        required
+        autocomplete="current-password">
+      </ion-input>
+    </ion-item>
+
+    <ion-button 
+      expand="block" 
+      type="submit" 
+      class="ion-margin-top"
+      [disabled]="!user.contrasena || !user.correo">
+      Acceso
+    </ion-button>
+    
+    <ion-button 
+      expand="block" 
+      (click)="resetPassword()" 
+      fill="clear">
+      Restablecer contraseña
+    </ion-button>
+  </form>
+
+</ion-content>

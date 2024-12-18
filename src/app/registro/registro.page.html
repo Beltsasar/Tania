@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="registerUser()">
+    <!-- Campo Nombre -->
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input [(ngModel)]="user.nombre" name="nombre" type="text" required></ion-input>
+    </ion-item>
+
+    <!-- Campo Apellido -->
+    <ion-item>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input [(ngModel)]="user.apellido" name="apellido" type="text" required></ion-input>
+    </ion-item>
+
+    <!-- Campo Segundo Apellido -->
+    <ion-item>
+      <ion-label position="floating">Segundo Apellido</ion-label>
+      <ion-input [(ngModel)]="user.segundoApellido" name="segundoApellido" type="text"></ion-input>
+    </ion-item>
+
+    <!-- Campo Correo -->
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input [(ngModel)]="user.correo" name="correo" type="email" required></ion-input>
+    </ion-item>
+
+    <!-- Campo Contraseña -->
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="user.contrasena" name="contrasena" type="password" required></ion-input>
+    </ion-item>
+
+    <!-- Campo Rol -->
+    <ion-item>
+      <ion-label>Rol</ion-label>
+      <ion-select [(ngModel)]="user.rol" name="rol" placeholder="Selecciona tu rol">
+        <ion-select-option value="estudiante">Estudiante</ion-select-option>
+        <ion-select-option value="profesor">Profesor/a</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- Botón de Registro -->
+    <ion-button expand="block" type="submit">Registrarse</ion-button>
+  </form>
+</ion-content>

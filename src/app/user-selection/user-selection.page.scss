@@ -1,0 +1,50 @@
+/* Estilo general para el ion-content */
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    background: #f9f9f9; /* Fondo claro */
+  }
+  
+  /* Estilo para las imágenes */
+  ion-content img {
+    max-width: 40%; /* Ajusta al 70% del ancho */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  /* Botones */
+  ion-button {
+    margin: 10px 0; /* Margen superior e inferior */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    --background: #007bff; /* Fondo del botón */
+    --color: white; /* Color del texto */
+    --border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  /* Botón claro para la opción de olvidar contraseña */
+  ion-button[fill="clear"] {
+    --background: transparent;
+    --color: #007bff; /* Azul */
+    --font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  /* Estilo del footer */
+  .app-footer {
+    width: 100%;
+    padding: 10px;
+    background: #007bff; /* Azul */
+    color: white; /* Texto en blanco */
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #0056b3; /* Línea de borde */
+  }
+  

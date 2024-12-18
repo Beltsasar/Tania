@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Estudiante</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="dashboard-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Bienvenido, {{ nombre }} {{ apellido }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Correo: {{ correo }}</p> <!-- Mostramos el correo directamente -->
+      </ion-card-content>
+    </ion-card>
+    <ion-button expand="full" (click)="camara()">Ir a escanear QR</ion-button>
+
+    <ion-button expand="full" (click)="logout()">Cerrar sesión</ion-button>
+  </div>
+</ion-content>

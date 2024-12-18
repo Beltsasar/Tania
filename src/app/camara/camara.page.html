@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Tomar Foto</ion-title>
+  </ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <video #videoElement autoplay *ngIf="isCameraActive"></video>
+  <img *ngIf="image" [src]="image" />
+  
+  <div *ngIf="isCameraActive">
+    <ion-button (click)="takePicture()">Tomar Foto</ion-button>
+  </div>
+  
+  <div *ngIf="!isCameraActive">
+    <ion-button (click)="takeAnother()">Volve a escanear!</ion-button>
+    <ion-button (click)="saveImage()">Este es mi QR?</ion-button>
+  </div>
+</ion-content>
